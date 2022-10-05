@@ -8,4 +8,20 @@
         c: integer
     returns:
         integer: the number of positive numbers in the given numbers */
-void main() {}
+int func(int a, int b, int c) {
+  int sum = 0;
+  if (a > 0) {
+    sum += 1;
+  }
+  if (b > 0) {
+    sum += 1;
+  }
+  if (c > 0) {
+    sum += 1;
+  }
+  return sum;
+}
+
+void main() {
+  print(func(2, 8, -9));
+}
